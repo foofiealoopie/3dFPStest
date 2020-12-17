@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Start.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1024.0
+margin_bottom = 599.0
+
+[node name="Label" type="Label" parent="Panel"]
+margin_right = 1020.0
+margin_bottom = 168.0
+text = "My Test Game"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 375.09
+margin_top = 245.611
+margin_right = 646.09
+margin_bottom = 373.611
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 60.0678
+margin_top = 142.828
+margin_right = 311.068
+margin_bottom = 404.828
+text = "There is no real objective to this. I am
+just learning how to make a 3 D game
+
+Use WASD or arrow keys to move
+
+Click the left mouse button to attack
+
+Press keyboard key 1 2 or 3 to switch 
+between available weapons
+
+Hold down the right mouse button to aim
+with the Sniper
+
+Press space bar to jump
+
+Hit the red rectangles to kill them"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
